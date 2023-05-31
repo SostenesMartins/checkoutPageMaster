@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1 class="header__title">
+            Checkout
+        </h1>
+    </header>
+    <main class="main">
+        <form class="conteiner__checkout">
+            <h2 class="h2__subtitle">
+                Contact infomation
+            </h2>
+            <label class="textlabel" for="email">E-mail</label>
+            <div class="conteiner__input">
+                <i class="fa fa-envelope icon"></i>
+                <input required class="inputbox" type="email" placeholder="Enter your email...">
+            </div>
+            <label class="textlabel" for="phone">Phone</label>
+            <div class="conteiner__input">
+                <i class="fa-solid fa-phone"></i>
+                <input required class="inputbox" type="number" placeholder="Enter your phone...">
+            </div>
+
+            <h3 class="h3__subtitle">
+                Shipping address
+                </h2>
+                <label class="textlabel" for="Full name">Full name</label>
+                <div class="conteiner__input">
+                    <i class="fa-solid fa-user"></i>
+                    <input required class="inputbox" type="text" placeholder="Your name...">
+                </div>
+                <label class="textlabel" for="andress">Anddress</label>
+                <div class="conteiner__input">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input required class="inputbox" type="anddress" placeholder="Your anddress...">
+                </div>
+                <label class="textlabel" for="city">City</label>
+                <div class="conteiner__input">
+                    <i class="fa-solid fa-city"></i>
+                    <input required class="inputbox" type="anddress" placeholder="Your city...">
+                </div>
+                <div class="conteiner__box__second__input">
+                    <div>
+                        <label class="textlabel" for="country">Country</label>
+                        <div class="conteiner__second__input">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <select required class="inputbox__second" name="" id="">
+                                <option value="" selected="selected">Your country...</option>
+                                <option value="">Brasil</option>
+                                <option value="">Russia</option>
+                                <option value="">Coreia do Norte</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="textlabel" for="Postal code">Postal Code</label>
+                        <div class="conteiner__second__input">
+                            <i class="fa-solid fa-envelopes-bulk"></i>
+                            <input required class="inputbox__second" type="anddress" placeholder="Your postal code...">
+                        </div>
+                    </div>
+                </div>
+                <div class="conteiner__checkbox">
+                    <input type="checkbox">
+                    <p class="desc__checkbox">Save this information for next time</p>
+                </div>
+                <div class="conteiner__btn">
+                    <button action="" type="submit" class="btn">
+                        continue
+                    </button>
+                </div>
+        </form>
+        <section>
+            <div class="conteiner__store">
+                <div class="store__item">
+                    <img class="img__photo" width="134px" src="photo1.png" alt="schoolbag">
+                    <div class="conteiner__desc__box">
+                        <div class="box__desc">
+                            <p class="nome__item">
+                                Vintage Backbag
+                            </p>
+                            <div class="price">
+                                <p class="discount__item">
+                                    $54.99
+                                </p>
+                                <p class="price__item">
+                                    <s>$94.99</s>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box__item">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="btn__negative">
+                                &#8722
+                            </button>
+                            <input class="input__price" type="number" value="0">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="btn__positive">
+                                &#43
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="store__item">
+                    <img class="img__photo" width="134px" src="photo2.png" alt="tenis">
+                    <div class="conteiner__desc__box">
+                        <div class="box__desc">
+                            <p class="nome__item">
+                                Levi Shoes
+                            </p>
+                            <div class="price">
+                                <p class="discount__item">
+                                    $74.99
+                                </p>
+                                <p class="price__item">
+                                    <s>$124.99</s>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box__item">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="btn__negative">
+                                &#8722
+                            </button>
+                            <input class="input__price" type="number" value="0">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="btn__positive">
+                                &#43
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteiner__box__final">
+                    <div class="liner"></div>
+                    <div class="box__second__final">
+                        <p class="shipping__final">
+                            Shipping
+                        </p>
+                        <p class="discount__final">
+                            $19
+                        </p>
+                    </div>
+                    <div class="liner"></div>
+                    <div class="box__second__final">
+                        <p class="total__final">
+                            Total
+                        </p>
+                        <p class="price__final">
+                            $148.98
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p class="footer__copyright">
+                created by
+                <a class="copyright__owner" target="_blank"
+                    href="https://www.linkedin.com/in/s%C3%B3stenes-martins-336b491bb/">Sóstenes</a> -
+                devChallenger.io
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
